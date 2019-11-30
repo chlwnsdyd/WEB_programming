@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2014104338 최준용</title>
+    
+    <script>
+        var number = prompt("몇개의 숫자를 입력 받을까요?");
+        var arr = new Array();
+        var sum=0;
+        var sum2=0;
+        
+        for(var i = 0; i < number; i++){
+            var n = prompt((i+1) + "번째 숫자는 무엇인가요?");
+            arr[i] = parseInt(n);
+            sum +=arr[i];
+        }
+        function statistics(arr){
+        var m = arr.length;
+        document.write("평균 : "+sum/m+"<br><br>");
+        
+        
+            var m = arr.length;
+            var arr2 = new Array(m);
+        for(var i=0; i< m; i++){
+            arr2[i] = arr[i] - sum/m;
+            arr2[i] = arr2[i]*arr2[i];
+            sum2 +=arr2[i];
+        }
+        
+        document.write("표준편차 : "+ sum2/m);
+        }
+        </script>
+</head>
+
+<body>
+    <script>
+        statistics(arr);
+    </script>
+
+</body>
+</html>
