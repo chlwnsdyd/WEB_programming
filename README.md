@@ -24,34 +24,4 @@
 <br>
  
 
- 
-<br>
-아래는 기본 코드이다
 
-<!DOCTYPE html>
-
-<html>
-
-<head>
-
-</head>
-
-<body>
-
-<script>
-
- 
-
-var number = prompt("몇개의 숫자를 입력 받을까요?");
-
-for(var i = 0; i < number; i++)
-
-prompt((i+1) + "번째 숫자는 무엇인가요?");
-
- 
-
-</script>
-
-</body>
-
-</html>
